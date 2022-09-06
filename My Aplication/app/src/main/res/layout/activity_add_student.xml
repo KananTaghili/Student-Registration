@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".AddStudentActivity">
+
+    <TextView
+        android:id="@+id/addProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/add_student"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterName"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/surnameAdd"
+        app:layout_constraintEnd_toEndOf="@+id/addProcess"
+        app:layout_constraintStart_toStartOf="@+id/addProcess"
+        app:layout_constraintTop_toBottomOf="@+id/addProcess"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/surnameAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterSurname"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:hint="@string/surname"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/ageAdd"
+        app:layout_constraintEnd_toEndOf="@+id/nameAdd"
+        app:layout_constraintStart_toStartOf="@+id/nameAdd"
+        app:layout_constraintTop_toBottomOf="@+id/nameAdd"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/ageAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterAge"
+        android:background="@drawable/back"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/classNameAdd"
+        app:layout_constraintEnd_toEndOf="@+id/surnameAdd"
+        app:layout_constraintStart_toStartOf="@+id/surnameAdd"
+        app:layout_constraintTop_toBottomOf="@+id/surnameAdd"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/classNameAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterClass"
+        android:background="@drawable/back"
+        android:ems="10"
+        android:hint="@string/class_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/createBtnAdd"
+        app:layout_constraintEnd_toEndOf="@+id/ageAdd"
+        app:layout_constraintStart_toStartOf="@+id/ageAdd"
+        app:layout_constraintTop_toBottomOf="@+id/ageAdd"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/createBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="createClickAdd"
+        android:text="@string/create"
+        app:layout_constraintBottom_toTopOf="@+id/addInfo"
+        app:layout_constraintEnd_toEndOf="@+id/classNameAdd"
+        app:layout_constraintStart_toStartOf="@+id/classNameAdd"
+        app:layout_constraintTop_toBottomOf="@+id/classNameAdd" />
+
+    <TextView
+        android:id="@+id/addInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/createBtnAdd"
+        app:layout_constraintStart_toStartOf="@+id/createBtnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/createBtnAdd" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

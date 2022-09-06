@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".DeleteTeacherActivity">
+
+    <TextView
+        android:id="@+id/deleteAccountProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/delete_account"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/oldPassword1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints="enterNew_1"
+        android:background="@drawable/back"
+        android:hint="@string/enter_old_password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/deleteAccountProcess"
+        app:layout_constraintStart_toStartOf="@+id/deleteAccountProcess"
+        app:layout_constraintTop_toBottomOf="@+id/deleteAccountProcess" />
+
+    <EditText
+        android:id="@+id/oldPassword2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterNew_2"
+        android:background="@drawable/back"
+        android:hint="@string/again"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/oldPassword1"
+        app:layout_constraintStart_toStartOf="@+id/oldPassword1"
+        app:layout_constraintTop_toBottomOf="@+id/oldPassword1" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="deleteClick"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toEndOf="@+id/oldPassword2"
+        app:layout_constraintStart_toStartOf="@+id/oldPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/oldPassword2"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/deleteInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#FA0202"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/deleteBtn"
+        app:layout_constraintStart_toStartOf="@+id/deleteBtn"
+        app:layout_constraintTop_toBottomOf="@+id/deleteBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".UpdateTeacherActivity">
+
+    <TextView
+        android:id="@+id/updatePasswordProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/update_password"
+        android:textColor="#673AB7"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/oldPasswordUpdate"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:autofillHints=""
+        android:background="@drawable/back"
+        android:ems="10"
+        android:hint="@string/enter_old_password"
+        android:inputType="textPersonName"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/updatePasswordProcess"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="@+id/updatePasswordProcess"
+        app:layout_constraintTop_toBottomOf="@+id/updatePasswordProcess"
+        tools:ignore="TextFields" />
+
+    <Button
+        android:id="@+id/findBtnForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:onClick="findClickUpdate"
+        android:text="@string/check"
+        app:layout_constraintStart_toEndOf="@+id/oldPasswordUpdate"
+        app:layout_constraintTop_toTopOf="@+id/oldPasswordUpdate"
+        tools:ignore="UsingOnClickInXml" />
+
+    <EditText
+        android:id="@+id/newPassword1Update"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterNew_1"
+        android:background="@drawable/back"
+        android:hint="@string/enter_new_password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/oldPasswordUpdate"
+        app:layout_constraintStart_toStartOf="@+id/oldPasswordUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/oldPasswordUpdate" />
+
+    <EditText
+        android:id="@+id/newPassword2Update"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints="enterNew_2"
+        android:background="@drawable/back"
+        android:hint="@string/again"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/newPassword1Update"
+        app:layout_constraintStart_toStartOf="@+id/newPassword1Update"
+        app:layout_constraintTop_toBottomOf="@+id/newPassword1Update" />
+
+    <Button
+        android:id="@+id/changerBtnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="changeClickUpdate"
+        android:text="@string/change"
+        app:layout_constraintEnd_toEndOf="@+id/newPassword2Update"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/newPassword2Update"
+        app:layout_constraintTop_toBottomOf="@+id/newPassword2Update"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/updateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/changerBtnUpdate"
+        app:layout_constraintStart_toStartOf="@+id/changerBtnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/changerBtnUpdate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
